@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container">
+    <form method="post" asp-controller="Home" asp-action="Import" enctype="multipart/form-data">
+        <input type="file" name="file" /><br />
+        <button type="submit" class="btn btn-primary">Import from Excel</button>
+        <table asp-table="dt"></table>
+
+    </form>
+
+</div>
